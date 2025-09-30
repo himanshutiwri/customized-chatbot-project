@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Enter API Key</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your GROQ API Key</h1>
+        {% if error_message %}
+            <div class="error-message">{{ error_message }}</div> <!-- Display error message -->
+        {% endif %}
+        <form method="POST">  <!-- Ensure method is POST -->
+            <input type="text" name="api_key" placeholder="GROQ API Key" required>
+            <button type="submit">Save</button>
+        </form>
+        <p>After entering your API key, you will be redirected to the chat interface.</p>
+        
+        <!-- <style>
+            .error-message {
+                color: red; /* Red color for error messages */
+                margin-bottom: 10px; /* Space below the message */
+            }
+        </style> -->
+    </div>
+</body>
+</html>

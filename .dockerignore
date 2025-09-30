@@ -1,0 +1,11 @@
+env
+./env
+logs
+.gitignore
+.git
+./chatbotenv
+./chabot-env
+.chatbotenv
+.chatbot-env
+chatbotenv
+chatbot-env

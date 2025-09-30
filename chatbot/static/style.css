@@ -1,0 +1,124 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fc; /* Light background for the entire page */
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height:100vh; /* Adjusted height to fit better on screen */
+    max-width: 1200px; /* Reduced maximum width for better fit */
+    margin: auto; /* Center horizontally */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #fff; /* White background for main container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Header */
+.chat-header {
+    background-color: #007fd3; /* Dark header color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Reduced padding for header */
+    text-align: center; /* Center align header text */
+}
+
+.logo-container {
+    display: flex; /* Flexbox layout for logo and title */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    height: 60px; /* Reduced logo size */
+}
+
+h1 {
+    margin-left: 50px; /* Space between logo and title */
+    font-size: 30px; /* Font size for title */
+}
+
+/* Chat Box */
+.chat-box {
+    flex: 1; /* Take remaining space */
+    padding: 10px; /* Padding inside chat box */
+    overflow-y: auto; /* Scrollable if content exceeds height */
+    background-color: #ffffff; /* Light grey background for chat area */
+}
+
+/* Chat Message Styles */
+.chat-message {
+    display: flex; /* Flexbox layout for messages */
+    align-items: flex-start; /* Align messages at the start */
+}
+
+.user-message {
+    justify-content: flex-end; /* Align user messages to the right */
+}
+
+.user-message .message-content {
+    background-color: #007bff; /* User message background color */
+    color: white; /* User message text color */
+}
+
+.bot-message .message-content {
+    background-color: #f1f0f0; /* Bot message background color */
+}
+
+/* Message Content Styles */
+.message-content {
+    max-width: 75%; /* Limit width of messages to fit better on screen */
+    padding: 8px 12px; /* Reduced padding inside messages for compactness */
+    border-radius: 8px; /* Rounded corners for messages */
+}
+
+/* Message Input Container Styles */
+.message-input-container {
+    display: flex; /* Flexbox layout for input area */
+    padding: 10px 20px; /* Padding for input area */
+}
+
+textarea {
+    flex-grow: 1; /* Take available space in input area */
+    padding: 10px; /* Padding inside textarea */
+    font-size: 14px; /* Font size for textarea text (can be adjusted)*/
+    border-radius: 20px; /* Rounded corners for textarea (more pronounced)*/
+}
+
+textarea::placeholder { 
+   color:#aaa; 
+   opacity:.8; 
+}
+
+textarea {
+   border:none; 
+   outline:none; 
+   resize:none; 
+   box-shadow:none; 
+}
+
+button {
+   margin-left: 50px; /* Space between textarea and button */
+   background-color: #3293fa; /* Button color */
+   color: white; /* Button text color */
+   padding: 8px 16px; /* Adjusted padding inside button (reduced)*/
+   border-radius: 20px; /* Rounded corners for button (more pronounced)*/
+   border: none; /* Remove default border from button */
+   cursor: pointer; /* Pointer cursor on hover over button */
+   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+   background-color: #0269d7; /* Darker button color on hover */
+}
+
+/* Code Block Styling */
+pre {
+   background-color: #2e2e2e; /* Dark grey background for code blocks */
+   padding: 10px; /* Padding inside code block (can be adjusted)*/
+   border-radius: 5px; /* Rounded corners for code blocks */
+   overflow-x: auto; /* Allow horizontal scrolling for long code lines */
+   white-space: pre-wrap; /* Preserve whitespace and wrap lines within code blocks */ 
+}
